@@ -1,0 +1,51 @@
+{%extends 'base.html'%}
+{%block content%}
+<h1>Form Page</h1>
+<form method="POST">
+
+    <div class="mb-1">
+        
+    {{ form.hidden_tag() }}
+
+    {{ form.clientID.label(class="form-label") }}
+    {{ form.clientID (class="form-control")}}
+    <br/>
+
+    {{ form.retrieve (class="btn btn-primary") }}
+    <br/><br/>
+     
+   
+    {{ form.businessName.label(class="form-label") }}
+    {{ form.businessName(class="form-control") }}
+
+    <br/>
+    {{ form.abn.label(class="form-label") }}
+    {{ form.abn(class="form-control") }}
+
+    <br/>
+    {{ form.billerID.label(class="form-label") }}
+    {{ form.billerID (class="form-control") }}
+
+    <br/>
+    {{ form.note.label(class="form-label") }}
+    {{ form.note (class="form-control") }}
+
+    <br/>
+    {{ form.type.label(class="form-label") }}
+    {{ form.type (class="form-control") }}
+
+    <br/>
+    {{ form.state.label(class="form-label") }}
+    {{ form.state (class="form-control") }}
+
+    
+    <br/>
+    {{ form.submit (class="btn btn-primary") }}
+    <br/><br/> <br/><br/>
+    
+
+    
+
+</div>
+</form>
+{%endblock%}
