@@ -5,19 +5,30 @@ const ctx = canvas.getContext("2d");
 
 function loadImage(event) {
   originalName=file.files[0].name;
-  const image = document.getElementById("imgDisplayed");
-  image.src = URL.createObjectURL(event.target.files[0]);
-  image.onload = function() {
-  originalWidth=this.width;   
-  originalHeight=this.height;
-  console.log("Orginal Width=" + originalWidth);
-  console.log("Orginal Height=" + originalHeight);
+  console.log ("file type: "+file.files[0].type);
+  if (file.files[0].type=="image/jpeg" || file.files[0].type=="image/png") {
+    const image = document.getElementById("imgDisplayed");
+    image.src = URL.createObjectURL(event.target.files[0]);
+    
+    image.onload = function() {
+    originalWidth=this.width;   
+    originalHeight=this.height;
+    //console.log("Orginal Width=" + originalWidth);
+    //console.log("Orginal Height=" + originalHeight);
             
-  document.getElementById("imWidth").value=this.width;
-  document.getElementById("imHeight").value=originalHeight;
+    document.getElementById("imWidth").value=this.width;
+    document.getElementById("imHeight").value=originalHeight;
 
-  prev();
-    }
+    prev();
+  }
+
+  }
+  else if (file.files[0].type=="application/msword") {
+    alert("Word file uploaded");
+}
+   
+
+
 
 
 //const preview = document.getElementById("preview");
@@ -28,8 +39,8 @@ function prev() {
     const image = document.getElementById("imgDisplayed");
     const imWidth = document.getElementById("imWidth").value;
     const imHeight = document.getElementById("imHeight").value;
-    console.log("prev:imWidth=" + imWidth);
-    console.log("prev:imHeight=" + imHeight);
+    //console.log("prev:imWidth=" + imWidth);
+    //console.log("prev:imHeight=" + imHeight);
 
     canvas.width = imWidth;
     canvas.height = imHeight;

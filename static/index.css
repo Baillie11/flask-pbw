@@ -5,8 +5,6 @@ body {
     list-style: none;
     box-sizing: border-box;
     font-family: 'arial';
-    letter-spacing: 3px;
-
 }
 
 /* element */
@@ -16,12 +14,6 @@ body {
     font-size: 13px;
 }
 
-.c_grid {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-gap: 2vmax;
-}
 
 .grid {
     display: grid;
@@ -48,14 +40,6 @@ table {
     border-collapse: collapse;
     letter-spacing: 3px;
     /* width: 100%; */
-}
-
-td,
-th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 1vmax;
-    width: fit-content;
 }
 
 form {
@@ -85,7 +69,7 @@ select {
 
 option {
     font-size: 1.5vmax;
-    letter-spacing: 3px;
+    
 }
 
 .file_submit {

@@ -2,16 +2,18 @@
   text-align: center;
 }
 
+
 input {
   display: table;
   margin-bottom: 1em;
   width: auto;
   font-size: 16px;
-  border: 2px solid grey;
-  color: black;
+  border: 3px solid grey;
+  color: rgb(255, 255, 255);
   background-color: grey;
   border-radius: 5px;
   padding: 3px;
+
 }
 
 #file {
@@ -24,59 +26,60 @@ input {
   width: 50%;
   margin-top: 4em;
   
-   }
+}
 
-   .slider::after {
-    content: '100';
-    color: black;
-    font-size: 1.5rem;
-    position: absolute;
-    left: 27.5%;
-    margin-top:-1.75em
-  }
+.slider::after {
+  content: '100';
+  color: black;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 25em;
+  margin-top:-1.75em;
+}
 
-  .slider::before{
-   content: '0';
-   color: black;
-   font-size: 1.5rem;
-   position: absolute;
-   left: 10%;
-   top:48%
+.slider::before {
+  content: '0'; 
+  color: black; 
+  font-size: 1.5rem; 
+  position: absolute; 
+  left: 13em; 
+  margin-top:-1.75em;
  }
 
-   .slider {
-     -webkit-appearance: none;
-      width: 50%;
-      height: 15px;
-      border-radius: 5px;
-      background: #0078D4;
-      outline: none;
-      opacity: 0.7;
-      -webkit-transition: .2s;
-      transition: opacity .2s;
-      border-radius: 12px;
-      box-shadow: 0px 0px 10px 1px black;
-   }
+.slider {
+  -webkit-appearance: none;
+   width: 50%;
+   height: 15px;
+   border-radius: 5px;
+   background: #0078D4;
+   outline: none;
+   opacity: 0.7;
+   -webkit-transition: .2s;
+   transition: opacity .2s;
+   border-radius: 12px;
+   box-shadow: 0px 0px 10px 1px black;
+}
 
-   .slider::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      appearance: none;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      background: #fff;
-      cursor: pointer;
-   }
+.slider::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   appearance: none;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   background: #fff;
+   cursor: pointer;
+}
 
-   .buttons {
-    width:15%;
-    color: #fff;
-    background: #0078D4;
-    padding: 5px;
-    margin-bottom: 5px;
-    border: 2px solid #0078D4;
-    border-radius: 5px;
-    font-size: 20px;
-    cursor: pointer;
-    
-  }
+.buttons {
+ width:15%;
+ color: #fff;
+ background: #0078D4;
+ padding: 5px;
+ margin-bottom: 5px;
+ border: 2px solid #0078D4;
+ border-radius: 5px;
+ font-size: 20px;
+ cursor: pointer;
+ text-align: center;
+ 
+}

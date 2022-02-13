@@ -25,10 +25,26 @@
         <center><input class="file_submit" type="Submit"></center>
 
         {% if name %}
-        <center>
-            <h3 style="color: blue;" class="let_space">https://demo.paybyweb.nab.com.au/SecureBillPayment/start?org_id={{name}}&bill_name={{invoice}}</h3>
-            <h3 style="color: blue;" class="let_space">https://paybyweb.nab.com.au/SecureBillPayment/start?org_id={{name}}&bill_name={{invoice}}</h3>
-        </center>
+        <h3 style="color: blue;" class="let_space">
+                
+            <center>
+                <p>Client ID: {{name}}</p>
+                <p>Invoice Name: {{invoice}}</p>
+                <p>Demo Link:</p>
+            </center>
+                <center>
+                <a href=https://demo.paybyweb.nab.com.au/SecureBillPayment/start?org_id={{name}}&bill_name={{invoice}} target="_blank" rel={{name}}>
+                https://demo.paybyweb.nab.com.au/SecureBillPayment/start?org_id={{name}}&bill_name={{invoice}}
+              </a>
+            
+        </br></br>
+            <p>Live Link:</p>
+                <a href=https://paybyweb.nab.com.au/SecureBillPayment/start?org_id={{name}}&bill_name={{invoice}} target="_blank" rel={{name}}>
+                https://paybyweb.nab.com.au/SecureBillPayment/start?org_id={{name}}&bill_name={{invoice}}
+              </a>
+        
+            </center>
+        </h3>
 
         {% endif %}
     </form>

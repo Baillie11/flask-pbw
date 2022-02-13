@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
   <link rel="stylesheet" type="text/css" href="../static/upload.css">
   <title>Image Resizer</title>
 </head>
@@ -12,16 +8,20 @@
   {%block content%}
      
 <div class="container">
-      
-    
+<p><h1>Upload Page</h1>
+<h5>Use this page to upload and resize images as well as upload </h5>
+</p>
+<br/>
+       
     <form>
       <div class ="buttons">
-        <label for="file">Upload an Image</label>
+        <label for="file">Upload</label>
       </div>
-        <input type="file" id="file" accept="image/*" onchange="loadImage(event)">
+      <h6>.png, .jpg or .docx only allowed</h6>
+        <input type="file" id="file" accept="image/png, image/jpeg, application/msword" onchange="loadImage(event)">
       
         <button class = "buttons" id="down">Download</button>
-        <br/>
+        <br/><br/>
       
       <div class ="dimensions">
         <label>Width</label>
